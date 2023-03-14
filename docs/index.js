@@ -5293,11 +5293,11 @@ var Document = function () {
 					//node
 					if (typeof inputFile == 'string') {
 						//file name
-						require('fs').readFile(inputFile, function (error, data) {
-							if (error) reject(error);else if (data) {
-								parse(data, { name: inputFile.split(/[\/\\]/).pop().replace(/\.docx$/i, '') });
-							}
-						});
+						// require('fs').readFile(inputFile, function (error, data) {
+						// 	if (error) reject(error);else if (data) {
+						// 		parse(data, { name: inputFile.split(/[\/\\]/).pop().replace(/\.docx$/i, '') });
+						// 	}
+						// });
 					} else {
 						parse(inputFile);
 					}
